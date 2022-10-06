@@ -1,0 +1,42 @@
+Algoritmo "Ração"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Renato Gomes
+// Descrição   : Um algoritmo para auxiliar na questão de cálculo de quantos dias dura a ração comprada.! 
+// Autor(a)    : Roger Almeida
+// Data atual  : 05/10/2022
+
+Var
+// Seção de Declarações das variáveis 
+
+Racao, cachorro1, cachorro2, Consumo_cachorro1, Consumo_cachorro2, Total_consumo_dia, Dias: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+Escreva("Digite a quantidade de ração comprada:")
+ Leia (Racao)
+
+ Escreva ("Digite a quantidade de ração consumida Cachorro 1 ( em gramas) por dia:")
+     Leia (cachorro1)
+
+ Escreva("Digite a quantidade de ração consumida Cachorro 2 ( em gramas)  por dia:")
+     Leia (cachorro2)
+     
+ Consumo_cachorro1 <- cachorro1/1000
+
+      Consumo_cachorro2 <- cachorro2/1000
+      
+      // soma o total de quilos consumidos pelos 2 animais
+
+      Total_consumo_dia <- Consumo_cachorro1 + Consumo_cachorro2 // em quilos
+
+      // calcula quantos dias vai dar a quantidade de ração comprada
+
+      Dias <- Racao / Total_consumo_dia
+
+      Escreva("Total de dias de duração da ração comprada : Dias")
+
+
+
+
+Fimalgoritmo
